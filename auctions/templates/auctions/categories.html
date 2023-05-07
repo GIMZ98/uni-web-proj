@@ -1,0 +1,77 @@
+{% extends "auctions/layout.html" %}
+{% load static %}
+
+{% block body %}
+<h2 style="margin-left:15px">Categories</h2>
+<div class="category-box" style="margin-left:50px; margin-top:50px;">
+
+	<div class="category-single-box">
+		<a href="/categories/Fashion">
+			<div class="box">
+				<div class="c-im">
+					<img src="{% static "images/fashion.png" %}" style="object-fit:contain; height:100%" alt="hehehe">
+				</div>
+				<div class="c-t-box">
+					<h2>Fashion</h2>
+				</div>	
+			</div>
+	     </a>		
+     </div>
+
+	<div class="category-single-box">
+		<a href="/categories/Toys">		
+			<div class="box">
+				<div class="c-im">
+					<img src="{% static "images/toys.png" %}" style="object-fit:contain; height:100%" alt="hehehe">
+				</div>
+				<div class="c-t-box">
+					<h2>Toys</h2>
+				</div>									
+			</div>
+	     </a>	
+	</div>
+
+	<div class="category-single-box">
+		<a href="/categories/Electronics">	
+			<div class="box">
+				<div class="c-im">
+					<img src="{% static "images/elec.png" %}" alt="hehehe">
+				</div>
+				<div class="c-t-box">
+					<h2>Electronics</h2>	
+				</div>		
+			</div>
+	     </a>	
+	</div>
+
+	<div class="category-single-box">
+		<a href="/categories/Home">
+			<div class="box">
+				<div class="c-im">
+					<img src="{% static "images/home.png" %}" style="object-fit:contain; height:100%" alt="hehehe">
+				</div>
+				<div class="c-t-box">
+					<h2>Home</h2>
+				</div>				
+			</div>
+	     </a>	
+	</div>
+
+	<div class="category-single-box">
+		<a href="/categories/Other">
+			<div class="box">				
+				<div class="c-im">					
+					<img src="{% static "images/other.png" %}" style="object-fit:contain; height:100%" alt="hehehe">
+				</div>
+				<div class="c-t-box">
+					<h2>Other</h2>	
+				</div>			
+ 			</div>
+	     </a>	
+	</div>
+
+    </div>
+    {{ category }}
+
+{% endblock %}
+
